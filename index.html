@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>José - Admon. de Sistemas TI</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <span class="dot"></span><span>josei@panda</span>
+        </div>
+        <div class="links-div">
+            <a class="links" href="#whoami">whoami</a>
+            <a class="links" href="#educacion">educación</a>
+            <a class="links" href="#homelab">homelab</a>
+            <a class="links" href="#contacto">contacto</a>
+        </div>
+    </header>
+
+    <section class="section" id="whoami">
+        <div class="console-top">
+            <span class="console-prompt">josei@panda: ~</span>
+        </div>
+        <div class="console-bottom">
+            <p><span class="cmd-icon">$ </span>whoami</p>
+            <p class="cmd-result">José Millán, apasionado del mundo TI desde pequeñito :D</p>
+            <p><span class="cmd-icon">$ </span>cat sobre-mi.txt</p>
+            <p class="cmd-result">Administrador de Sistemas Informáticos en Red.</p>
+            <p class="cmd-result">Los sistemas son mi terreno: configurarlos, mantenerlos y entender qué pasa por debajo (virtualización, redes, almacenamiento) es lo que más disfruto. También arreglarlos cuando dejan de funcionar.</p>
+            <p><span class="cmd-icon">$ </span>cat extra.txt</p>
+            <p class="cmd-result">Otro de mis hobbies es trastear con sitios web y crearlos desde cero (este mismo es un ejemplo). Hay algo en el diseño web que me enciende esa 'llamita' por dentro.</p>
+            <p><span class="cmd-icon">$ </span><span class="cursor"></span></p>
+        </div>
+    </section>
+    <div class="scroll-text">
+        <span>haz scroll ↓</span>
+    </div>
+    <section class="section" id="educacion">
+        <p class="cmd-out"><span class="cmd-icon">$ </span>cat ~/educacion.log</p>
+        <h1>Educación</h1>
+        <div class="card-div">
+            <div class="card">
+                <div class="card-top">
+                    <p>eso.service</p>
+                    <p><span class="dot dot-green"></span><span class="text-green">exited (SUCCESS)</span></p>
+                </div>
+                <p class="card-text">Educación Secundaria Obligatoria</p>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <p>grado-medio-smr.service</p>
+                    <p><span class="dot dot-yellow"></span><span class="text-yellow">exited (MATRÍCULA HONOR)</span></p>
+                </div>
+                <p class="card-text">Técnico en Sistemas Microinformáticos y Redes</p>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <p>grado-superior-asir.service</p>
+                    <p><span class="dot dot-green"></span><span class="text-green">exited (SUCCESS)</span></p>
+                </div>
+                <p class="card-text">Técnico Superior en Administración de Sistemas Informáticos en Red</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="homelab">
+        <p class="cmd-out"><span class="cmd-icon">$ </span>systemctl status --all</p>
+        <h1>Homelab y proyectos</h1>
+        <div class="card-div">
+            <div class="card">
+                <div class="card-top">
+                    <p>proxmox-ve.service</p>
+                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                </div>
+                <p class="card-text">Virtualización en servidor propio (X99, Xeon E3-2650, 32GB, 4.5TB). Pruebas con máquinas LVM, contenedores LXC y despliegue automatizado con cloud init</p>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <p>wireguard.service</p>
+                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                </div>
+                <p class="card-text">Servicio VPN desplegado para acceso personal a la infraestructura.</p>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <p>openmediavault.service</p>
+                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                </div>
+                <p class="card-text">Servicio de NAS para uso personal y backup. Accesible por SMB y NFS.</p>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <p>cachyos-desktop.service</p>
+                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                </div>
+                <p class="card-text">Sistema operativo basado en Arch Linux de uso diario en ambos equipos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <p class="cmd-out"><span class="cmd-icon">$ </span>mail -s "Buenos días"</p>
+        <h1>Contacto</h1>
+        <div class="contact-div">
+            <a href="https://www.linkedin.com/in/joseigmillan/" target="_blank" class="contact-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+                <span class="contact-text">LinkedIn</span>
+            </a> 
+            <a href="mailto:joseigmillan@gmail.com" target="_blank" class="contact-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                <span class="contact-text">Correo</span>
+            </a> 
+        </div>
+    </section>
+</body>
+</html>
