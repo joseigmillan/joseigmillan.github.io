@@ -149,6 +149,16 @@ body {
     animation: blink 1s steps(1) infinite; 
 }
 
+.footer {
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--padding-header);
+    border-top: solid 1px var(--gray);
+    display: flex;
+    align-items: center;
+}
+
 @keyframes blink{ 50%{ opacity:0; } }
 
 .scroll-text {
