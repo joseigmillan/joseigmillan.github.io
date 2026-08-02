@@ -227,7 +227,7 @@ svg {
 @media (max-width: 620px){ 
     :root {
         --margins: 0px 3%;
-        --padding-header: 20px 10%;
+        --padding-header: 20px 3%;
     }
 
     .links {
