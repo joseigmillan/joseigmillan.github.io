@@ -174,7 +174,8 @@ body {
     padding: var(--padding-header);
     border-top: solid 1px var(--gray);
     display: flex;
-    align-items: center;
+
+    justify-content: space-between;
 }
 
 @keyframes blink{ 50%{ opacity:0; } }
