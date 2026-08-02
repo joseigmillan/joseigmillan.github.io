@@ -149,6 +149,24 @@ body {
     animation: blink 1s steps(1) infinite; 
 }
 
+.skills-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.tag {
+    background-color: var(--bg3);
+    padding: 10px;
+    border-radius: var(--borders);
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 .footer {
     bottom: 0;
     width: 100%;
