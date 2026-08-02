@@ -240,7 +240,10 @@ svg {
 
     .card-top {
         flex-direction: column;
-        
+    }
+
+    .footer-text {
+        display: none;
     }
 }
 
