@@ -1,208 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>José - Admon. de Sistemas TI</title>
-</head>
-<header class="header">
-    <div>
-        <span class="dot"></span><span>josei@panda</span>
-    </div>
-    <div class="links-div">
-        <a class="links" href="#whoami">whoami</a>
-        <a class="links" href="#educacion">educación</a>
-        <a class="links" href="#homelab">homelab</a>
-        <a class="links" href="#skills">skills</a>
-        <a class="links" href="#contacto">contacto</a>
-    </div>
-</header>
-<body>
-    <section class="section" id="whoami">
-        <div class="console-top">
-            <span class="console-prompt">josei@panda: ~</span>
-        </div>
-        <div class="console-bottom">
-            <p><span class="cmd-icon">$ </span>whoami</p>
-            <p class="cmd-result">José Millán, apasionado del mundo TI desde pequeñito :D</p>
-            <p><span class="cmd-icon">$ </span>cat sobre-mi.txt</p>
-            <p class="cmd-result">Administrador de Sistemas Informáticos en Red.</p>
-            <p class="cmd-result">Los sistemas son mi terreno: configurarlos, mantenerlos y entender qué pasa por debajo (virtualización, redes, almacenamiento) es lo que más disfruto. También arreglarlos cuando dejan de funcionar.</p>
-            <p><span class="cmd-icon">$ </span>cat extra.txt</p>
-            <p class="cmd-result">Otro de mis hobbies es trastear con sitios web y crearlos desde cero (este mismo es un ejemplo). Hay algo en el diseño web que me enciende esa 'llamita' por dentro.</p>
-            <p><span class="cmd-icon">$ </span><span class="cursor"></span></p>
-        </div>
-    </section>
-    <div class="scroll-text">
-        <span>haz scroll ↓</span>
-    </div>
-    <section class="section" id="educacion">
-        <p class="cmd-out"><span class="cmd-icon">$ </span>cat ~/educacion.log</p>
-        <h1>Educación</h1>
-        <div class="card-div">
-            <div class="card">
-                <div class="card-top">
-                    <p>eso.service</p>
-                    <p><span class="dot dot-green"></span><span class="text-green">exited (SUCCESS)</span></p>
-                </div>
-                <p class="card-text">Educación Secundaria Obligatoria</p>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <p>grado-medio-smr.service</p>
-                    <p><span class="dot dot-yellow"></span><span class="text-yellow">exited (MATRÍCULA HONOR)</span></p>
-                </div>
-                <p class="card-text">Técnico en Sistemas Microinformáticos y Redes</p>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <p>grado-superior-asir.service</p>
-                    <p><span class="dot dot-green"></span><span class="text-green">exited (SUCCESS)</span></p>
-                </div>
-                <p class="card-text">Técnico Superior en Administración de Sistemas Informáticos en Red</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="section" id="homelab">
-        <p class="cmd-out"><span class="cmd-icon">$ </span>systemctl status --all</p>
-        <h1>Homelab y proyectos</h1>
-        <div class="card-div">
-            <div class="card">
-                <div class="card-top">
-                    <p>proxmox-ve.service</p>
-                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
-                </div>
-                <p class="card-text">Virtualización en servidor propio (X99, Xeon E3-2650, 32GB, 4.5TB). Pruebas con máquinas LVM, contenedores LXC y despliegue automatizado con cloud init</p>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <p>wireguard.service</p>
-                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
-                </div>
-                <p class="card-text">Servicio VPN desplegado para acceso personal a la infraestructura.</p>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <p>openmediavault.service</p>
-                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
-                </div>
-                <p class="card-text">Servicio de NAS para uso personal y backup. Accesible por SMB y NFS.</p>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <p>cachyos-desktop.service</p>
-                    <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
-                </div>
-                <p class="card-text">Sistema operativo basado en Arch Linux de uso diario en ambos equipos.</p>
-            </div>
-        </div>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>José - Admon. de Sistemas TI</title>
+    </head>
 
-    <section class="section" id="skills">
-        <p class="cmd-out"><span class="cmd-icon">$ </span>cat skills.txt</p>
-        <h1>Skills</h1>
-        <div class="skills-div">
+    <body>
+        <header class="header">
             <div>
-                <span class="skill-category">Virtualización</span>
-                <p class="skill">
-                    <span class="tag">Proxmox</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">Vagrant</span>
-                    <span class="tag">VirtualBox</span>
-                    <span class="tag">VMWare</span>
-                </p>
+                <span class="dot"></span><span>josei@panda</span>
             </div>
-
-            <div>
-                <span class="skill-category">Sistemas</span>
-                <p class="skill">
-                    <span class="tag">Arch</span>
-                    <span class="tag">Debian</span>
-                    <span class="tag">Kali</span>
-                    <span class="tag">Windows Server</span>
-                </p>
+            <div class="links-div">
+                <a class="links" href="#whoami">whoami</a>
+                <a class="links" href="#educacion">educación</a>
+                <a class="links" href="#homelab">homelab</a>
+                <a class="links" href="#skills">skills</a>
+                <a class="links" href="#contacto">contacto</a>
             </div>
-
-            <div>
-                <span class="skill-category">Redes</span>
-                <p class="skill">
-                    <span class="tag">Cisco</span>
-                    <span class="tag">Mikrotik</span>
-                    <span class="tag">GNS3</span>
-                    <span class="tag">Firewall</span>
-                    <span class="tag">WireGuard</span>
-                </p>
+        </header>
+        
+        <section class="section" id="whoami">
+            <div class="console-top">
+                <span class="console-prompt">josei@panda: ~</span>
             </div>
-
-            <div>
-                <span class="skill-category">Servicios y protocolos</span>
-                <p class="skill">
-                    <span class="tag">Active Directory</span>
-                    <span class="tag">OpenLDAP</span>
-                    <span class="tag">Apache</span>
-                    <span class="tag">Zabbix</span>
-                    <span class="tag">Grafana</span>
-                    <span class="tag">OpenSSL</span>
-                    <span class="tag">Crontab</span>
-                    <span class="tag">DHCP</span>
-                    <span class="tag">DNS</span>
-                    <span class="tag">FTP</span>
-                    <span class="tag">SSH</span>
-                    <span class="tag">NFS</span>
-                    <span class="tag">SMB</span>
-                    <span class="tag">Rsync</span>
-
-                </p>
+            <div class="console-bottom">
+                <p><span class="cmd-icon">$ </span>whoami</p>
+                <p class="cmd-result">José Millán, apasionado del mundo TI desde pequeñito :D</p>
+                <p><span class="cmd-icon">$ </span>cat sobre-mi.txt</p>
+                <p class="cmd-result">Administrador de Sistemas Informáticos en Red.</p>
+                <p class="cmd-result">Los sistemas son mi terreno: configurarlos, mantenerlos y entender qué pasa por debajo (virtualización, redes, almacenamiento) es lo que más disfruto. También arreglarlos cuando dejan de funcionar.</p>
+                <p><span class="cmd-icon">$ </span>cat extra.txt</p>
+                <p class="cmd-result">Otro de mis hobbies es trastear con sitios web y crearlos desde cero (este mismo es un ejemplo). Hay algo en el diseño web que me enciende esa 'llamita' por dentro.</p>
+                <p><span class="cmd-icon">$ </span><span class="cursor"></span></p>
             </div>
+        </section>
 
-            <div>
-                <span class="skill-category">Lenguajes</span>
-                <p class="skill">
-                    <span class="tag">HTML5</span>
-                    <span class="tag">CSS3</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">PHP</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Bash Script</span>
-                </p>
-            </div>
-
-            <div>
-                <span class="skill-category">Uso personal</span>
-                <p class="skill">
-                    <span class="tag">Cachy (Arch)</span>
-                    <span class="tag">ZSH</span>
-                    <span class="tag">Windows 11</span>
-                    <span class="tag">Proxmox</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">Obsidian</span>
-                    <span class="tag">Markdown</span>
-                    <span class="tag">GIMP</span>
-                </p>
-            </div>
+        <div class="scroll-text">
+            <span>haz scroll ↓</span>
         </div>
-    </section>
+        
+        <section class="section" id="educacion">
+            <p class="cmd-out"><span class="cmd-icon">$ </span>cat ~/educacion.log</p>
+            <h1>Educación</h1>
+            <div class="card-div">
+                <div class="card">
+                    <div class="card-top">
+                        <p>eso.service</p>
+                        <p><span class="dot dot-green"></span><span class="text-green">exited (SUCCESS)</span></p>
+                    </div>
+                    <p class="card-text">Educación Secundaria Obligatoria</p>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <p>grado-medio-smr.service</p>
+                        <p><span class="dot dot-yellow"></span><span class="text-yellow">exited (MATRÍCULA HONOR)</span></p>
+                    </div>
+                    <p class="card-text">Técnico en Sistemas Microinformáticos y Redes</p>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <p>grado-superior-asir.service</p>
+                        <p><span class="dot dot-green"></span><span class="text-green">exited (SUCCESS)</span></p>
+                    </div>
+                    <p class="card-text">Técnico Superior en Administración de Sistemas Informáticos en Red</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="homelab">
+            <p class="cmd-out"><span class="cmd-icon">$ </span>systemctl status --all</p>
+            <h1>Homelab y proyectos</h1>
+            <div class="card-div">
+                <div class="card">
+                    <div class="card-top">
+                        <p>proxmox-ve.service</p>
+                        <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                    </div>
+                    <p class="card-text">Virtualización en servidor propio (X99, Xeon E3-2650, 32GB, 4.5TB). Pruebas con máquinas LVM, contenedores LXC y despliegue automatizado con cloud init</p>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <p>wireguard.service</p>
+                        <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                    </div>
+                    <p class="card-text">Servicio VPN desplegado para acceso personal a la infraestructura.</p>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <p>openmediavault.service</p>
+                        <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                    </div>
+                    <p class="card-text">Servicio de NAS para uso personal y backup. Accesible por SMB y NFS.</p>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <p>cachyos-desktop.service</p>
+                        <p><span class="dot dot-green"></span><span class="text-green">active (RUNNING)</span></p>
+                    </div>
+                    <p class="card-text">Sistema operativo basado en Arch Linux de uso diario en ambos equipos.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="section" id="contacto">
-        <p class="cmd-out"><span class="cmd-icon">$ </span>mail -s "Buenos días"</p>
-        <h1>Contacto</h1>
-        <div class="contact-div">
-            <a href="https://www.linkedin.com/in/joseigmillan/" target="_blank" class="contact-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
-                <span class="contact-text">LinkedIn</span>
-            </a> 
-            <a href="mailto:joseigmillan@gmail.com" target="_blank" class="contact-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
-                <span class="contact-text">Correo</span>
-            </a> 
-        </div>
-    </section>
-</body>
-<footer class="footer">
-    <span class="card-text">josei@panda: ~$ exit</span>
-    <span class="card-text footer-text">José Millán - hecho con mucho 🤍</span>
-</footer>
+        <section class="section" id="skills">
+            <p class="cmd-out"><span class="cmd-icon">$ </span>cat skills.txt</p>
+            <h1>Skills</h1>
+            <div class="skills-div">
+                <div>
+                    <span class="skill-category">Virtualización</span>
+                    <p class="skill">
+                        <span class="tag">Proxmox</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Vagrant</span>
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">VMWare</span>
+                    </p>
+                </div>
+
+                <div>
+                    <span class="skill-category">Sistemas</span>
+                    <p class="skill">
+                        <span class="tag">Arch</span>
+                        <span class="tag">Debian</span>
+                        <span class="tag">Kali</span>
+                        <span class="tag">Windows Server</span>
+                    </p>
+                </div>
+
+                <div>
+                    <span class="skill-category">Redes</span>
+                    <p class="skill">
+                        <span class="tag">Cisco</span>
+                        <span class="tag">Mikrotik</span>
+                        <span class="tag">GNS3</span>
+                        <span class="tag">Firewall</span>
+                        <span class="tag">WireGuard</span>
+                    </p>
+                </div>
+
+                <div>
+                    <span class="skill-category">Servicios y protocolos</span>
+                    <p class="skill">
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">OpenLDAP</span>
+                        <span class="tag">Apache</span>
+                        <span class="tag">Zabbix</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">OpenSSL</span>
+                        <span class="tag">Crontab</span>
+                        <span class="tag">DHCP</span>
+                        <span class="tag">DNS</span>
+                        <span class="tag">FTP</span>
+                        <span class="tag">SSH</span>
+                        <span class="tag">NFS</span>
+                        <span class="tag">SMB</span>
+                        <span class="tag">Rsync</span>
+
+                    </p>
+                </div>
+
+                <div>
+                    <span class="skill-category">Lenguajes</span>
+                    <p class="skill">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash Script</span>
+                    </p>
+                </div>
+
+                <div>
+                    <span class="skill-category">Uso personal</span>
+                    <p class="skill">
+                        <span class="tag">Cachy (Arch)</span>
+                        <span class="tag">ZSH</span>
+                        <span class="tag">Windows 11</span>
+                        <span class="tag">Proxmox</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Obsidian</span>
+                        <span class="tag">Markdown</span>
+                        <span class="tag">GIMP</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacto">
+            <p class="cmd-out"><span class="cmd-icon">$ </span>mail -s "Buenos días"</p>
+            <h1>Contacto</h1>
+            <div class="contact-div">
+                <a href="https://www.linkedin.com/in/joseigmillan/" target="_blank" class="contact-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
+                    <span class="contact-text">LinkedIn</span>
+                </a> 
+                <a href="mailto:joseigmillan@gmail.com" target="_blank" class="contact-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
+                    <span class="contact-text">Correo</span>
+                </a> 
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span class="card-text">josei@panda: ~$ exit</span>
+            <span class="card-text footer-text">José Millán - hecho con mucho 🤍</span>
+        </footer>
+    </body>
 </html>
