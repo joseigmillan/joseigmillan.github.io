@@ -225,7 +225,15 @@ svg {
     width: 50px;
 }
 
-@media (max-width: 620px){ 
+@media (max-width: 1300px) {
+    :root {
+        --margins: 0px 7%;
+        --padding-header: 20px 7%;
+    }
+
+}
+
+@media (max-width: 700px){ 
     :root {
         --margins: 0px 3%;
         --padding-header: 20px 3%;
